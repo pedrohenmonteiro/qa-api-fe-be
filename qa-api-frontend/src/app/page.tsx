@@ -1,13 +1,17 @@
 import Button from "@/components/Button";
+import Container from "@/components/Container";
 import Header from "@/components/Header";
-import Image from "next/image";
+import QuestionCard from "@/components/QuestionCard";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <main>
         <Button>Teste</Button>
+        <Container size="smaller">
+          <QuestionCard title="Uma peSArgunta teste"></QuestionCard>
+        </Container>
       </main>
     </>
   );
