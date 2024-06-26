@@ -1,10 +1,14 @@
 import Button from "@/components/Button";
+import Header from "@/components/Header";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Button>Batodsadsam</Button>
-    </main>
+    <>
+      <Header />
+      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        <Button>Teste</Button>
+      </main>
+    </>
   );
 }
