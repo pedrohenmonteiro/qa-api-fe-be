@@ -1,5 +1,5 @@
-import Button from "./Button";
-import Container from "./Container";
+import Button from "../Button/Button";
+import Container from "../Container/Container";
 
 const Header = () => {
   return (
