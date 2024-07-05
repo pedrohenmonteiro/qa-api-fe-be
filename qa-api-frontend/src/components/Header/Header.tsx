@@ -3,7 +3,7 @@ import Container from "../Container/Container";
 
 const Header = () => {
   return (
-    <header className="bg-white w-full py-2">
+    <header className="bg-white w-full py-2 shadow-md">
       <Container>
         <div className="flex justify-between">
           <h1 className="text-4xl">Q&A</h1>

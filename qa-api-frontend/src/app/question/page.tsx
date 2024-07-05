@@ -1,10 +1,10 @@
-import TextField from "@/components/TextField/TextField";
+import FormQuestion from "@/components/FormQuestion/FormQuestion";
 import Base from "@/templates/Base";
 
 const QuestionPage = () => {
   return (
     <Base>
-      <TextField label="Teste" name="pergunta" />
+      <FormQuestion />
     </Base>
   );
 };

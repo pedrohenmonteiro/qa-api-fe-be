@@ -11,7 +11,7 @@ type InputFieldProps = InputHTMLAttributes<HTMLInputElement>;
 type TextAreaFieldProps = TextareaHTMLAttributes<HTMLTextAreaElement>;
 
 export type TextFieldProps = {
-  onInput?: (value: string) => void;
+  onInputChange?: (value: string) => void;
   label?: string;
   initialValue?: string;
   icon?: React.ReactNode;
@@ -29,7 +29,7 @@ const TextField = ({
   initialValue = "",
   error,
   disabled = false,
-  onInput,
+  onInputChange,
   as = "input",
   ...props
 }: TextFieldProps) => {
@@ -41,7 +41,7 @@ const TextField = ({
     const newValue = e.currentTarget.value;
     setValue(newValue);
 
-    !!onInput && onInput(newValue);
+    !!onInputChange && onInputChange(newValue);
   };
 
   const Element = as === "textarea" ? "textarea" : "input";

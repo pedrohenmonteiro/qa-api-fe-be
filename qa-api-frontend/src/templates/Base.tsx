@@ -4,12 +4,12 @@ import React from "react";
 
 const Base = ({ children }: { children: React.ReactNode }) => {
   return (
-    <>
+    <div>
       <Header />
       <div className="mt-10">
         <Container size="smaller">{children}</Container>
       </div>
-    </>
+    </div>
   );
 };
 
